@@ -1,0 +1,12 @@
+{
+    "require": {
+        "illuminate/database": "^5.2"
+    },
+    "autoload": {
+    	"classmap": [
+    		"app/models",
+    		"app/controllers",
+    		"vendor/inacho/php-credit-card-validator/src"
+    	]
+    }
+}
