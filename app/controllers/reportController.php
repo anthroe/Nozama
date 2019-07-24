@@ -15,7 +15,7 @@ class reportController extends Controller
 	{
 		if($_SESSION['accountType'] != 0)
 		{
-			header("Location: ". "/Nozama/public");
+			header("Location: ". "/public");
 		}		
 
 		// $_SESSION['accountID'] = 2;
@@ -140,12 +140,12 @@ class reportController extends Controller
 		if(!is_null($report->Listing_Id))
 		{
 			// Redirect to back the listing's details
-			header('Location: '. '/Nozama/public/listingController/viewDetails/' . $report->Listing_Id);
+			header('Location: '. '/public/listingController/viewDetails/' . $report->Listing_Id);
 		}
 		else
 		{
 			// Redirect to back the user's profile
-			header('Location: '. '/Nozama/public/profileController/viewProfile/' . $report->Account_Id);
+			header('Location: '. '/public/profileController/viewProfile/' . $report->Account_Id);
 		}
 	}
 

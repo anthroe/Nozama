@@ -18,7 +18,7 @@
 	</div>
 
 	<div>
-		<form method="POST" action="/Nozama/public/paymentMethodController/editPaymentMethod">
+		<form method="POST" action="/public/paymentMethodController/editPaymentMethod">
 			<input class="btn btn-primary" type="submit" value="Enter a new Payment Method" />
 		</form>
 	</div>

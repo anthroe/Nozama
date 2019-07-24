@@ -60,7 +60,7 @@ class wishlistController extends Controller
 		$wish->save();
 
 		// Redirect back to the listing details
-		header('Location: '. '/Nozama/public/listingController/viewDetails/' . $listingID . '/' . $optionID);
+		header('Location: '. '/public/listingController/viewDetails/' . $listingID . '/' . $optionID);
 	}
 
 	// Removes the listing from the user's wishlist an redirects back to the user's wishlist 
@@ -73,7 +73,7 @@ class wishlistController extends Controller
 		$wish->delete();
 
 		// Redirect back to the listing details
-		header('Location: '. '/Nozama/public/wishlistController/viewUserWishlist/' . $_SESSION['accountID']);
+		header('Location: '. '/public/wishlistController/viewUserWishlist/' . $_SESSION['accountID']);
 	}
 
 	// Removes the listing from the user's wishlist an redirects back to the listing details of that listing 
@@ -83,7 +83,7 @@ class wishlistController extends Controller
 		$wish->delete();
 
 		// Redirect back to the listing details
-		header('Location: '. '/Nozama/public/listingController/viewDetails/' . $listingID . '/' . $optionID);
+		header('Location: '. '/public/listingController/viewDetails/' . $listingID . '/' . $optionID);
 	}
 
 	// Transfers the wish with the given Wishlist_Id to the user's shopping cart
@@ -135,7 +135,7 @@ class wishlistController extends Controller
 		}
 
 		// Redirect back to the wishlist
-		header('Location: '. '/Nozama/public/wishlistController/viewUserWishlist/' . $_SESSION['accountID']);
+		header('Location: '. '/public/wishlistController/viewUserWishlist/' . $_SESSION['accountID']);
 	}
 }
 

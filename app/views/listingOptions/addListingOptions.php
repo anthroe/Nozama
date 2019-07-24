@@ -4,8 +4,8 @@
 
 <html>
 <head>
-	<script type="text/javascript" src="/Nozama/public/javascript/utility.js"></script>
-	<script type="text/javascript" src="/Nozama/public/javascript/addListingOptions.js"></script>
+	<script type="text/javascript" src="/public/javascript/utility.js"></script>
+	<script type="text/javascript" src="/public/javascript/addListingOptions.js"></script>
 </head>
 
 <body>

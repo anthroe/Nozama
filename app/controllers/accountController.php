@@ -31,7 +31,7 @@ class accountController extends Controller
 			if(!self::validate($account))
 			{
 				// Redirect back to the edit account form
-				header('Location: '. '/Nozama/public/accountController/editAccount/' . $accountID);
+				header('Location: '. '/public/accountController/editAccount/' . $accountID);
 				return;
 			}
 
@@ -50,7 +50,7 @@ class accountController extends Controller
 			$account->save();
 
 			// Redirect back to the edit account form
-			header('Location: '. '/Nozama/public/accountController/editAccount/' . $accountID);
+			header('Location: '. '/public/accountController/editAccount/' . $accountID);
 		}
 		else // Display the form
 		{
@@ -140,7 +140,7 @@ class accountController extends Controller
 		$account->save();
 
 		// Redirect back to the edit account form
-		header('Location: '. '/Nozama/public/profileController/viewProfile/' . $accountID);
+		header('Location: '. '/public/profileController/viewProfile/' . $accountID);
 	}
 }
 

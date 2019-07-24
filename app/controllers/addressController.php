@@ -69,14 +69,14 @@ class addressController extends Controller
 			}	
 			
 			// Redirect to the list of addresses
-			header('Location: '. '/Nozama/public/addressController/viewAddresses/' . $_SESSION['accountID']);
+			header('Location: '. '/public/addressController/viewAddresses/' . $_SESSION['accountID']);
 		}
 		else if(isset($_POST['delete'])) // Delete an address
 		{
 			$address->delete();
 			
 			// Redirect to the list of addresses
-			header('Location: '. '/Nozama/public/addressController/viewAddresses/' . $_SESSION['accountID']);
+			header('Location: '. '/public/addressController/viewAddresses/' . $_SESSION['accountID']);
 		}
 		else // Display the address form
 		{	
@@ -109,7 +109,7 @@ class addressController extends Controller
 		$newDefaultAddress->save();
 
 		// Redirect to the list of addresses
-		header('Location: '. '/Nozama/public/addressController/viewAddresses/' . $_SESSION['accountID']);
+		header('Location: '. '/public/addressController/viewAddresses/' . $_SESSION['accountID']);
 	}
 }
 

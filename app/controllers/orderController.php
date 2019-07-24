@@ -227,7 +227,7 @@
 			}
 
 			// Redirect back to the listing's details
-			//header('Location: '. '/Nozama/public/listingController/viewDetails/' . $listingID);
+			//header('Location: '. '/public/listingController/viewDetails/' . $listingID);
 		}
 
 		// Display the page for admins to search for a specific order

@@ -171,10 +171,10 @@ public function viewOrder(){
 			echo '<script>alert("You have successfully placed your order")</script>';	
 
 			// Redirect to the home page
-			header('Location: '. '/Nozama/public/orderController/orderController/getSales/' .  $_SESSION['accountID']);
+			header('Location: '. '/public/orderController/orderController/getSales/' .  $_SESSION['accountID']);
 		}else{
 			
-		header('Location: '. '/Nozama/public/cartController/');
+		header('Location: '. '/public/cartController/');
 
 	}
 

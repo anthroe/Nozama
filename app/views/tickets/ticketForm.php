@@ -15,7 +15,7 @@
 <div class="contain">
 
 <div class="col-md-6">
-	<form method="post" action="/nozama/public/ticketController">	
+	<form method="post" action="/public/ticketController">	
 	<div class="row">
 
 		<div class="col-md-6">

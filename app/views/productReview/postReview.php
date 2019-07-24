@@ -8,8 +8,8 @@
 
 <html>
 <head>
-	<script type="text/javascript" src="/Nozama/public/javascript/utility.js"></script>
-	<script type="text/javascript" src="/Nozama/public/javascript/deleteButton.js"></script>
+	<script type="text/javascript" src="/public/javascript/utility.js"></script>
+	<script type="text/javascript" src="/public/javascript/deleteButton.js"></script>
 </head>
 
 <body>

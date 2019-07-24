@@ -41,13 +41,13 @@ class loginController extends Controller {
 			anonymousCartController::convertCart();
 
 			// Redirect to the home page
-			 header('Location: '. '/Nozama/public');
+			 header('Location: '. '/public');
 		} else {
 			
 			// Alert and redirect back to the login page
 			echo "<script type='text/javascript'>" . 
 					"alert('Invalid credentials');" .
-					"window.location.replace(\"/Nozama/public/loginController\");".
+					"window.location.replace(\"/public/loginController\");".
 				 "</script>";
 		}
 	}
@@ -62,7 +62,7 @@ class loginController extends Controller {
 		$_SESSION['accountType'] =	null;
 
 		// Redirect to the home page
-		header('Location: '. '/Nozama/public');
+		header('Location: '. '/public');
 	}
 }
 

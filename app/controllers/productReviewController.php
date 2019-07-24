@@ -84,7 +84,7 @@ class productReviewController extends Controller
 			}
 
 			// Redirect to the confirmation view
-			header('Location: '. '/Nozama/public/productReviewController/productReviewConfirmation/' . $listingID . '/' . $operation);
+			header('Location: '. '/public/productReviewController/productReviewConfirmation/' . $listingID . '/' . $operation);
 		}
 		# *********************************
 		# **********DELETE REVIEW**********
@@ -107,7 +107,7 @@ class productReviewController extends Controller
 			listingController::updateRating($listingID);
 
 			// Redirect to the confirmation view
-			header('Location: '. '/Nozama/public/productReviewController/productReviewConfirmation/' . $listingID . '/deleted');
+			header('Location: '. '/public/productReviewController/productReviewConfirmation/' . $listingID . '/deleted');
 		}
 		else // Display the postReview form
 		{

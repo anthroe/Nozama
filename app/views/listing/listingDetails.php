@@ -25,8 +25,8 @@
 
 <html>
 <head>
-	<script type="text/javascript" src="/Nozama/public/javascript/utility.js"></script>
-	<script type="text/javascript" src="/Nozama/public/javascript/listingDetails.js?"></script>
+	<script type="text/javascript" src="/public/javascript/utility.js"></script>
+	<script type="text/javascript" src="/public/javascript/listingDetails.js?"></script>
 </head>
 
 <body>
@@ -42,7 +42,7 @@
 				</div>
 
 				<div>
-					by <a href="/Nozama/public/profileController/viewProfile/<?= $sellerAccountID ?>"><?= htmlentities($seller) ?></a>
+					by <a href="/public/profileController/viewProfile/<?= $sellerAccountID ?>"><?= htmlentities($seller) ?></a>
 				</div>
 
 				<div>
@@ -79,7 +79,7 @@
 					<?php
 						if($stock > 0 && $sellerAccountID != $accountID) {
 					?>
-							<form class="form-horizontal" method="POST" action="/Nozama/public/shoppingCartController/addToCart/<?= $listingID ?>/<?= $optionID ?>">
+							<form class="form-horizontal" method="POST" action="/public/shoppingCartController/addToCart/<?= $listingID ?>/<?= $optionID ?>">
 								<?php
 									if(!is_null($errorMessage)) {
 								?>
@@ -108,14 +108,14 @@
 							<?php
 								if(is_null($wishID)) {
 							?>			
-								<form method="POST" action="/Nozama/public/wishlistController/addWish/<?= $listingID ?>/<?= $optionID ?>">
+								<form method="POST" action="/public/wishlistController/addWish/<?= $listingID ?>/<?= $optionID ?>">
 									<input class="btn btn-default" type="submit" value="Add To Wishlist" />
 								</form>
 							<?php
 								}
 								else {
 							?>
-								<form method="POST" action="/Nozama/public/wishlistController/removeThroughListingDetails/<?= $listingID ?>/<?= $optionID ?>/<?= $wishID ?>">
+								<form method="POST" action="/public/wishlistController/removeThroughListingDetails/<?= $listingID ?>/<?= $optionID ?>/<?= $wishID ?>">
 									<input class="btn btn-default" type="submit" value="Remove From Wishlist" />
 								</form>
 							<?php
@@ -149,7 +149,7 @@
 	<?php
 		if(!is_null($accountType) && $sellerAccountID != $accountID) {
 	?>
-			<form method="POST" action="/Nozama/public/reportController/fillOutReport/<?= $accountID ?>/<?= $listingID ?>">
+			<form method="POST" action="/public/reportController/fillOutReport/<?= $accountID ?>/<?= $listingID ?>">
 				<input class="btn btn-default" type="submit" value="Report" />
 			</form>
 
@@ -171,7 +171,7 @@
 	<?php
 		if(!is_null($accountType) && $accountType == 0) {
 	?>
-			<form method="POST" action="/Nozama/public/orderController/cancelAllOrders/<?= $listingID ?>">
+			<form method="POST" action="/public/orderController/cancelAllOrders/<?= $listingID ?>">
 				<button class="btn btn-danger" data-toggle="modal" data-target="#cancelConfirmation" type="button" value="<?= $viewIndex ?>" id="deleteButton">Cancel Orders</button>
 
 						<div id="cancelConfirmation" class="modal fade" role="dialog">
@@ -201,7 +201,7 @@
 				if($accountID != $sellerAccountID) {
 			?>
 
-					<form method="POST" action="/Nozama/public/listingController/editListing/<?= $listingID ?>">
+					<form method="POST" action="/public/listingController/editListing/<?= $listingID ?>">
 						<button class="btn btn-danger" data-toggle="modal" data-target="#deleteConfirmation" type="button" value="<?= $viewIndex ?>" id="deleteButton">Delete</button>
 
 						<div id="deleteConfirmation" class="modal fade" role="dialog">

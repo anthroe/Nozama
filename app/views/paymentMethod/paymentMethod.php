@@ -73,7 +73,7 @@
 
 			<tr>
 				<td>
-					<form method="POST" action="/Nozama/public/paymentMethodController/editPaymentMethod/<?= $paymentID
+					<form method="POST" action="/public/paymentMethodController/editPaymentMethod/<?= $paymentID
 					 ?>">
 						<input class="btn btn-default" type="submit" value="Edit" />
 						
@@ -105,7 +105,7 @@
 					<?php
 						if($paymentIndex > 0) {
 					?>
-							<form method="POST" action="/Nozama/public/paymentMethodController/switchDefaultPaymentMethod/<?= $paymentID ?>">
+							<form method="POST" action="/public/paymentMethodController/switchDefaultPaymentMethod/<?= $paymentID ?>">
 								<input class="btn btn-primary" type="submit" value="Make Default Payment Method" />
 							</form>
 					<?php

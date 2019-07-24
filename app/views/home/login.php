@@ -26,6 +26,6 @@
 		<input type="submit" name="login" value="Login">	
 	</form>
 
-	<a href="/Nozama/public/registrationController">Don't already have an account?</a>
+	<a href="/public/registrationController">Don't already have an account?</a>
 </body>
 </html>

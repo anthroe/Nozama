@@ -26,7 +26,7 @@
 		Subject: <?= htmlentities($subject) ?> <br>
 		Message: <?= htmlentities($message) ?> <br>
 		Status: <?= $status ?> <br>
-		Submitted By: <a href="/nozama/public/profileController/viewProfile/<?= $createdByID ?>" target="_blank"><?= $createdBy ?></a> <br>
+		Submitted By: <a href="/public/profileController/viewProfile/<?= $createdByID ?>" target="_blank"><?= $createdBy ?></a> <br>
 		Submitted On: <?= $createdOn ?> <br>
 
 	<?php
@@ -40,7 +40,7 @@
 
 			echo 	"<br>" .
 					"<div>" .
-					"<a href='/nozama/public/profileController/viewProfile/$reply->Account_Id' target='_blank'>" . 
+					"<a href='/public/profileController/viewProfile/$reply->Account_Id' target='_blank'>" . 
 					$user->Username . "</a>" . "<br>" .
 					$reply->Date . "<br>" .
 					$reply->Message .
@@ -57,7 +57,7 @@
 		else // Status of ticket is open
 		{	
 			// Display the reply text area
-			echo "<form method='post' action='/nozama/public/ticketController'>" .
+			echo "<form method='post' action='/public/ticketController'>" .
 					"<textarea rows='5' name='message' required='true'></textarea>" . 
 					"<br>" .
 					"<input type='hidden' name='accountID' value='$accountID'>" .
@@ -67,7 +67,7 @@
 
 			if($_SESSION['accountType'] == 1) // If current user is a customer
 			{
-				echo "<form method='post' action='/nozama/public/ticketController'>" .
+				echo "<form method='post' action='/public/ticketController'>" .
 				 	 	"<input type='hidden' name='closeTicket' value='$ticketID'>" .
 					 	"<input class='btn btn-warning' type='submit' value='Close this ticket'>" .
 				 	 "</form>";
@@ -75,7 +75,7 @@
 		}
 	?>	
 
-	<a class="btn btn-default" href="/nozama/public/ticketController">Return to the list of tickets</a>
+	<a class="btn btn-default" href="/public/ticketController">Return to the list of tickets</a>
 	</div>
 </body>
 </html>

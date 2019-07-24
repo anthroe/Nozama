@@ -54,7 +54,7 @@ class home extends Controller
 		if($account->Banned == 1)
 		{
 			// Redirect the banned user
-			header('Location: '. '/Nozama/public/home/bannedUser');
+			header('Location: '. '/public/home/bannedUser');
 		}
 	}
 

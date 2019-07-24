@@ -8,8 +8,8 @@
 
 <html>
 <head>
-	<script type="text/javascript" src="/Nozama/public/javascript/utility.js"></script>
-	<script type="text/javascript" src="/Nozama/public/javascript/editAccount.js"></script>
+	<script type="text/javascript" src="/public/javascript/utility.js"></script>
+	<script type="text/javascript" src="/public/javascript/editAccount.js"></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 		</div>
 
 
-		<form class="form-horizontal" method="POST" action="/Nozama/public/accountController/editAccount/<?= $accountID ?>">
+		<form class="form-horizontal" method="POST" action="/public/accountController/editAccount/<?= $accountID ?>">
 			<?php
 				if(!is_null($errorMessage)) {
 			?>

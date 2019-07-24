@@ -8,16 +8,16 @@
 
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="/Nozama/public/css/listingFilter.css?1" />
+	<link rel="stylesheet" type="text/css" href="/public/css/listingFilter.css?1" />
 
-	<script type="text/javascript" src="/Nozama/public/javascript/utility.js"></script>
-	<script type="text/javascript" src="/Nozama/public/javascript/listingFilter.js?12"></script>
+	<script type="text/javascript" src="/public/javascript/utility.js"></script>
+	<script type="text/javascript" src="/public/javascript/listingFilter.js?12"></script>
 </head>
 
 <body>
 	<div class="container">
 		<div class="row">
-			<form class="form-inline" id="filterForm" method="POST" action="/Nozama/public/">
+			<form class="form-inline" id="filterForm" method="POST" action="/public/">
 				<div class="form-group">
 					<input class="form-control input-sm" id="priceLowInput" type="number" name="filterPriceLow" step="any" placeholder="Price Low" value="<?= $priceLow ?>" />
 

@@ -26,7 +26,7 @@
 
 					<div>
 						by
-						<a href="/Nozama/public/profileController/viewProfile/<?= $listingSellerAccountID ?>">
+						<a href="/public/profileController/viewProfile/<?= $listingSellerAccountID ?>">
 							<?= htmlentities($listingSeller) ?>
 						</a>
 					</div>

@@ -73,7 +73,7 @@
 
 			<tr>
 				<td>
-					<form method="POST" action="/Nozama/public/addressController/editAddress/<?= $addressID ?>">
+					<form method="POST" action="/public/addressController/editAddress/<?= $addressID ?>">
 						<input class="btn btn-default" type="submit" value="Edit" />	
 
 						<button class="btn btn-danger" data-toggle="modal" data-target="#deleteConfirmation" type="button" value="<?= $viewIndex ?>" id="deleteButton">Delete</button>
@@ -104,7 +104,7 @@
 					<?php
 						if($addressIndex > 0) {
 					?>
-							<form method="POST" action="/Nozama/public/addressController/switchDefaultAddress/<?= $addressID ?>">
+							<form method="POST" action="/public/addressController/switchDefaultAddress/<?= $addressID ?>">
 								<input class="btn btn-primary" type="submit" value="Make Default Address" />
 							</form>
 					<?php

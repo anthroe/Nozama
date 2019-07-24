@@ -28,21 +28,21 @@
 	<table>
 		<tr>
 			<td>
-				<a href="/Nozama/public/listingController/viewDetails/<?= $listingID ?>/<?= $optionID ?>">
+				<a href="/public/listingController/viewDetails/<?= $listingID ?>/<?= $optionID ?>">
 					<img height="100px" width="100px" src="data:image/jpeg;base64,<?= base64_encode($image) ?>" />
 				</a>
 			</td>
 
 			<td>
 				<div>
-					<a href="/Nozama/public/listingController/viewDetails/<?= $listingID ?>/<?= $optionID ?>">
+					<a href="/public/listingController/viewDetails/<?= $listingID ?>/<?= $optionID ?>">
 						<?= htmlentities($title) ?>
 					</a>
 				</div>
 
 				<div>
 					by
-					<a href="/Nozama/public/profileController/viewProfile/<?= $sellerAccountID ?>">
+					<a href="/public/profileController/viewProfile/<?= $sellerAccountID ?>">
 						<?= htmlentities($seller) ?>
 					</a>
 				</div>
@@ -79,21 +79,21 @@
 						<?php
 							if($stock > 0 + $cartQuantity) {
 						?>
-								<form method="POST" action="/Nozama/public/wishlistController/transferWishToCart/<?= $wishID ?>">
+								<form method="POST" action="/public/wishlistController/transferWishToCart/<?= $wishID ?>">
 									<input class="btn btn-default" type="submit" value="Transfer To Cart" />
 								</form>
 						<?php
 							}
 						?>
 
-						<form method="POST" action="/Nozama/public/wishlistController/removeThroughWishlist/<?= $wishID ?>">
+						<form method="POST" action="/public/wishlistController/removeThroughWishlist/<?= $wishID ?>">
 							<input class="btn btn-danger" type="submit" value="Remove From Wishlist" />
 						</form>
 				<?php
 					}
 					else if(!is_null($accountType)) {
 				?>
-						<form method="POST" action="/Nozama/public/orderController/sendGift/<?= $optionID ?>">
+						<form method="POST" action="/public/orderController/sendGift/<?= $optionID ?>">
 							<input class="btn btn-primary" type="submit" value="Send As Gift" />
 						</form>
 				<?php

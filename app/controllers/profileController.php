@@ -104,7 +104,7 @@ class profileController extends Controller
 			notificationController::editProfileNotif($profileID);
 
 			// Redirect to the user's profile
-			header('Location: '. '/Nozama/public/profileController/viewProfile/' . $profileID);
+			header('Location: '. '/public/profileController/viewProfile/' . $profileID);
 		}
 		else // Display the form
 		{

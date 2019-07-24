@@ -84,7 +84,7 @@ class userReviewController extends Controller
 			}
 
 			// Redirect to the confirmation
-			header('Location: '. '/Nozama/public/userReviewController/userReviewConfirmation/' . $reviewedID . '/' . $operation);
+			header('Location: '. '/public/userReviewController/userReviewConfirmation/' . $reviewedID . '/' . $operation);
 		}
 		else if(isset($_POST['delete']) || isset($_POST['adminDelete'])) // Delete a userReview
 		{
@@ -104,7 +104,7 @@ class userReviewController extends Controller
 			profileController::updateRating($reviewedID);
 
 			// Redirect to the confirmation
-			header('Location: '. '/Nozama/public/userReviewController/userReviewConfirmation/' . $reviewedID . '/deleted');
+			header('Location: '. '/public/userReviewController/userReviewConfirmation/' . $reviewedID . '/deleted');
 		}
 		else // Display the userReview form
 		{

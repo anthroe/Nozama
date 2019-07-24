@@ -23,7 +23,7 @@ $total=0;
 </head>
 <div class="jumbotron text-center">
 	<body>
-	<form method="POST" action="/nozama/public/checkoutController/placeOrder">
+	<form method="POST" action="/public/checkoutController/placeOrder">
 
 		
 		<div>
@@ -129,7 +129,7 @@ $total=0;
 				
 	
 		</div>
-		<!--<form method="POST" action="/nozama/public/checkoutController/placeOrder" >-->
+		<!--<form method="POST" action="/public/checkoutController/placeOrder" >-->
 		<div class='form-row'>
               <div class='col-md-12 form-group'>
                 </br><input type="submit" value="Place Order  »" class="btn btn-info"  name="orderPress" id="orderPress">

@@ -20,7 +20,7 @@
 		<?php
 			if($wishlist->count() != 0 && is_null($viewingUser)) {
 		?>
-				<form method="POST" action="/Nozama/public/wishlistController/transferWishlistToCart">
+				<form method="POST" action="/public/wishlistController/transferWishlistToCart">
 					<input class="btn btn-info" type="submit" value="Transfer All To Cart" />
 				</form>
 		<?php

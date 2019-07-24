@@ -52,7 +52,7 @@ echo "                        <div class=\"col-xs-2\"><img height='100px' width=
 echo "                        </div>\n"; 
 echo "                        <div class=\"col-xs-4\">\n"; 
 echo "                            <h4 class=\"product-name\">
-<a href='/Nozama/public/listingController/viewDetails/$listing->Listing_Id/$listingOption->Option_Id'>" . htmlentities($listing->Title) . "</a> </br> &nbsp;&nbsp;&nbsp; <i>from <a href='/Nozama/public/profileController/viewProfile/$sellerId'>". htmlentities($sellerName->Username) . "</a> </i>";
+<a href='/public/listingController/viewDetails/$listing->Listing_Id/$listingOption->Option_Id'>" . htmlentities($listing->Title) . "</a> </br> &nbsp;&nbsp;&nbsp; <i>from <a href='/public/profileController/viewProfile/$sellerId'>". htmlentities($sellerName->Username) . "</a> </i>";
 echo "                       \n"; 
 ?>
  <?= isset($listingOption->Size) || isset($listingOption->Color) ? '<br />' : '' ?>
@@ -64,17 +64,17 @@ echo "                            <div class=\"col-xs-6 text-left\">\n";
 echo "                                <h6><strong>$listing->Price  <span class=\"text-muted\">x</span></strong></h6>\n"; 
 
 
-echo "                               <form method='POST' style='height:2px;' action='/Nozama/public/cartController/updateItem/".$data['cart']->get($index)->Cart_Id."'>".
+echo "                               <form method='POST' style='height:2px;' action='/public/cartController/updateItem/".$data['cart']->get($index)->Cart_Id."'>".
                      "<input type='number' min='1' name='updateQty' value=".$data['cart']->get($index)->Quantity." style='width: 40px;'>".
                     "<input type='submit' name='update' value='update'></form>"; 
 echo "                            </div>\n"; 
 echo "                            <div class=\"col-xs-2\">\n 
-<form method='POST' style='height:5px;' action='/Nozama/public/cartController/removeItem/" . $data['cart']->get($index)->Cart_Id."'>";
+<form method='POST' style='height:5px;' action='/public/cartController/removeItem/" . $data['cart']->get($index)->Cart_Id."'>";
                  
 echo "                                </br><input type=\"submit\" name=\"remove\" value=\" \" class=\"btn btn-link btn-xs\">\n</form></br>"; 
 echo "                                    <span class=\"glyphicon glyphicon-trash\"> </span>\n"; 
 echo "                                </button>\n
- <form method='POST' style='height:5px;' action='/Nozama/public/shoppingCartController/transferCartToWishlist/" . $data['cart']->get($index)->Cart_Id .
+ <form method='POST' style='height:5px;' action='/public/shoppingCartController/transferCartToWishlist/" . $data['cart']->get($index)->Cart_Id .
                            # $data['cart']->get($index)->Cart_Id, $data['cart']->get($index)->Listing_Id
                      "'></br><input type='submit' name='send' value='save for later'></form></br></td>" ;
 

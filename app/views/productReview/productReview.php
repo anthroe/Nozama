@@ -34,7 +34,7 @@
 
 			<div>
 				<span>
-					by <a href="/Nozama/public/profileController/viewProfile/<?= $reviewerID ?>"><?= htmlentities($reviewer) ?></a>
+					by <a href="/public/profileController/viewProfile/<?= $reviewerID ?>"><?= htmlentities($reviewer) ?></a>
 				</span>
 
 				<span>
@@ -50,7 +50,7 @@
 				<?php
 					if(!is_null($accountType) && ($accountType == 0 || $accountID == $reviewerID)) {
 				?>
-					<form method="POST" action="/Nozama/public/productReviewController/postListingReview/<?= $listingID ?>/<?= $prodReviewID ?>">
+					<form method="POST" action="/public/productReviewController/postListingReview/<?= $listingID ?>/<?= $prodReviewID ?>">
 						<button class="btn btn-danger" data-toggle="modal" data-target="#deleteConfirmation<?= $viewIndex ?>" type="button" value="<?= $viewIndex ?>" id="deleteButton">Delete</button>
 
 						<div id="deleteConfirmation<?= $viewIndex ?>" class="modal fade" role="dialog">

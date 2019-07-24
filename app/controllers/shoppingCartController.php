@@ -14,7 +14,7 @@ class shoppingCartController extends Controller
 		else
 		{
 			// Redirect to the listing details
-			header('Location: '. '/Nozama/public/cartController');
+			header('Location: '. '/public/cartController');
 		}
 	}
 
@@ -55,7 +55,7 @@ class shoppingCartController extends Controller
 		}
 
 		// Redirect to the listing details
-		header('Location: '. '/Nozama/public/listingController/viewDetails/' . $listingID . '/' . $optionID);
+		header('Location: '. '/public/listingController/viewDetails/' . $listingID . '/' . $optionID);
 	}
 
 	# ************************************
@@ -82,7 +82,7 @@ class shoppingCartController extends Controller
 		}
 		
 		// Redirect to the user's cart
-		header('Location: '. '/Nozama/public/cartController');
+		header('Location: '. '/public/cartController');
 			return;
 	}
 }

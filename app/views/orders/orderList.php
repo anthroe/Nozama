@@ -34,7 +34,7 @@
 						 "<td>$order->Date</td>" .
 						 "<td>$order->Status</td>" .
 						 "<td>" .
-						 "<form method='post' action='/nozama/public/orderController'>" . 
+						 "<form method='post' action='/public/orderController'>" . 
 						 	"<input type='hidden' name='viewOrder' value='$order->Order_Id'>" .
 						 	"<input type='submit' value='View Order' class='btn btn-info'>" .
 						 "</form>" .

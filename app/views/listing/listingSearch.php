@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<form class="navbar-form navbar-left form-inline" id="searchForm" method="POST" action="/Nozama/public/">
+	<form class="navbar-form navbar-left form-inline" id="searchForm" method="POST" action="/public/">
 		<div class="form-group">
 			<select class="form-control" name="searchCategory">
 				<option disabled selected>Category</option>

@@ -21,7 +21,7 @@
 <body>
 <div class="container">
 	<div class="row">
-	<form method="post" action="/Nozama/public/reportController">
+	<form method="post" action="/public/reportController">
 		<div class="col-xs-4">
 		<label for="category">Category:</label>
 					<select class="form-control" name="category" id="category" required="true">

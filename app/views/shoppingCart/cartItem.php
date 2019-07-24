@@ -24,18 +24,18 @@
 <body>
 	<tr>
 		<td>
-			<a href="/Nozama/public/listingController/viewDetails/<?= $listingID ?>/<?= $optionID ?>">
+			<a href="/public/listingController/viewDetails/<?= $listingID ?>/<?= $optionID ?>">
 				<img height="100px" width="100px" src="data:image/jpeg;base64,<?= base64_encode($image) ?>" />
 			</a>
 		</td>
 
 		<td style="padding-right: 50px;">
 			<div>
-				<a href="/Nozama/public/listingController/viewDetails/<?= $listingID ?>/<?= $optionID ?>"><?= htmlentities($title) ?></a>
+				<a href="/public/listingController/viewDetails/<?= $listingID ?>/<?= $optionID ?>"><?= htmlentities($title) ?></a>
 			</div>
 
 			<div>
-				by <a href="/Nozama/public/profileController/viewProfile/<?= $sellerProfileID ?>"><?= htmlentities($seller) ?></a>
+				by <a href="/public/profileController/viewProfile/<?= $sellerProfileID ?>"><?= htmlentities($seller) ?></a>
 			</div>
 
 
@@ -61,7 +61,7 @@
 
 			<br />
 
-			<a href="/Nozama/public/anonymousCartController/deleteFromCart/<?= $optionID ?>">Delete</a>
+			<a href="/public/anonymousCartController/deleteFromCart/<?= $optionID ?>">Delete</a>
 		</td>
 
 		<td align="left" style="padding-right: 50px;">
@@ -69,7 +69,7 @@
 		</td>
 
 		<td align="right">
-			<form method="POST" action="/Nozama/public/anonymousCartController/editCartItem/<?= $optionID ?>/<?= $index ?>">
+			<form method="POST" action="/public/anonymousCartController/editCartItem/<?= $optionID ?>/<?= $index ?>">
 				<?= $errorMessage ?>
 
 				<br />

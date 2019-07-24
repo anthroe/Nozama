@@ -35,14 +35,14 @@
 				if($notification->Read != 0)
 				{
 					echo "<li class='list-group-item disabled'>" .
-        			 "<a href='/Nozama/public/notificationController/getNotification/$notification->Notification_Id'>$notification->Subject</a>" .
+        			 "<a href='/public/notificationController/getNotification/$notification->Notification_Id'>$notification->Subject</a>" .
         			 "</li>";
 				}
 
 				else
 				{
 					echo "<li class='list-group-item'>" .
-	    			 "<a href='/Nozama/public/notificationController/getNotification/$notification->Notification_Id'>$notification->Subject</a>" .
+	    			 "<a href='/public/notificationController/getNotification/$notification->Notification_Id'>$notification->Subject</a>" .
 	    			 "</li>";
         		}
 			}
@@ -52,7 +52,7 @@
 
 
  		
- 		<form method="post" action='/Nozama/public/notificationController'>
+ 		<form method="post" action='/public/notificationController'>
  			<input type="submit" name="viewAllNotifications" class="btn btn-default form-control" value="See All Notifications">
  		</form>
  

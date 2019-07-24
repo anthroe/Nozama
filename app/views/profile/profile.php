@@ -110,7 +110,7 @@
 	?>
 			<br />
 
-			<form method="POST" action="/Nozama/public/reportController/fillOutReport/<?= $accountID ?>">
+			<form method="POST" action="/public/reportController/fillOutReport/<?= $accountID ?>">
 				<input class="btn btn-danger" type="submit" value="Report" />
 			</form>
 	<?php
@@ -120,7 +120,7 @@
 	<?php
 		if(!is_null($accountType) && $accountType == 0 && $profileID != $accountID) {
 	?>
-			<form method="POST" action="/Nozama/public/accountController/banAccount/<?= $profileID ?>">
+			<form method="POST" action="/public/accountController/banAccount/<?= $profileID ?>">
 				<input class="btn btn-danger" type="submit" value="<?= $banned == 0 ? 'Ban' : 'Unban' ?>" />
 			</form>
 	<?php

@@ -47,7 +47,7 @@
 		<?php
 			if($_SESSION['accountID'] != $accountID)
 			{
-				echo "Purchased By: <a href='/nozama/public/profileController/viewProfile/$accountID' target='_blank'>$username</a> <br>";
+				echo "Purchased By: <a href='/public/profileController/viewProfile/$accountID' target='_blank'>$username</a> <br>";
 			}  
 		?>
 
@@ -62,7 +62,7 @@
 			} 
 		?>
 
-		Item: <a href="/nozama/public/listingController/viewDetails/<?=$listingID?>" target="_blank"><?=$title?></a> <br>
+		Item: <a href="/public/listingController/viewDetails/<?=$listingID?>" target="_blank"><?=$title?></a> <br>
 
 		<?php
 			if(isset($color))
@@ -78,7 +78,7 @@
 
 		Price: <?=$price?> <br>
 		Quantity: <?=$quantity?> <br>
-		Seller: <a href="/nozama/public/profileController/viewProfile/<?=$sellerID?>" target="_blank"><?=$seller?></a> <br>
+		Seller: <a href="/public/profileController/viewProfile/<?=$sellerID?>" target="_blank"><?=$seller?></a> <br>
 		<br>
 	</div>
 	<div>
@@ -113,7 +113,7 @@
 		<?php
 			if((strcasecmp($status, "Cancelled") != 0 && strcasecmp($status, "Shipped") != 0 && strcasecmp($status, "Delivered") != 0) && ($_SESSION['accountType'] == 0 || $_SESSION['accountID'] == $sellerID)) 
 			{
-				echo "<form method='post' action='/nozama/public/orderController'>" .
+				echo "<form method='post' action='/public/orderController'>" .
 				 	 	"<input type='hidden' name='cancelOrder' value='$orderID'>" .
 					 	"<input class='btn btn-danger' type='submit' value='Cancel Order'>" .
 				 	 "</form>";
@@ -124,12 +124,12 @@
 
 				else if($_SESSION['accountID'] == $accountID)
 				{
-					echo "<br> <a class='btn btn-default' href='/nozama/public/orderController/getAllOrders/$accountID'> Return to your list of orders</a>";
+					echo "<br> <a class='btn btn-default' href='/public/orderController/getAllOrders/$accountID'> Return to your list of orders</a>";
 				}
 
 				else if($_SESSION['accountID'] == $sellerID)
 				{
-					echo "<br> <a class'btn btn-default' href='/nozama/public/orderController/getSales/$sellerID'> Return to your list of sales</a>";
+					echo "<br> <a class'btn btn-default' href='/public/orderController/getSales/$sellerID'> Return to your list of sales</a>";
 				}
 
 			//}

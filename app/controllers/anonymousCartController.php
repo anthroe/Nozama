@@ -124,7 +124,7 @@ class anonymousCartController extends Controller
 		setcookie('cart', serialize($cart), time() + (86400 * 30), '/');	
 
 		// Redirect to the listing details
-		header('Location: '. '/Nozama/public/listingController/viewDetails/' . $listingID . '/' . $optionID);
+		header('Location: '. '/public/listingController/viewDetails/' . $listingID . '/' . $optionID);
 	}
 
 	// Edits the quantity of a item in the user's anonymous cart
@@ -153,7 +153,7 @@ class anonymousCartController extends Controller
 		setcookie('cart', serialize($cart), time() + (86400 * 30), "/");
 
 		// Redirect to the anonymous cart
-		header('Location: '. '/Nozama/public/anonymousCartController/viewCart');
+		header('Location: '. '/public/anonymousCartController/viewCart');
 	}
 
 	// Deltes the given item from the anonymous user's cart
@@ -168,7 +168,7 @@ class anonymousCartController extends Controller
 		setcookie('cart', serialize($cart), time() + (86400 * 30), "/");
 
 		// Redirect to the anonymous cart
-		header('Location: '. '/Nozama/public/anonymousCartController/viewCart');
+		header('Location: '. '/public/anonymousCartController/viewCart');
 	}
 
 	// Converts an anonymous cart to a user shopping cart
@@ -185,7 +185,7 @@ class anonymousCartController extends Controller
 		if(is_null($cart))
 		{
 			// Redirect to the home page
-			header('Location: '. '/Nozama/public');
+			header('Location: '. '/public');
 			return;
 		}
 
@@ -201,7 +201,7 @@ class anonymousCartController extends Controller
 		unset($_SESSION['errorIndex']);
 
 		// Redirect to the user's cart
-		header('Location: '. '/Nozama/public/cartController');
+		header('Location: '. '/public/cartController');
 	}
 }
 

@@ -35,13 +35,13 @@
 							 "<td>$report->Subject</td>" .
 							 "<td>$report->Submitted_On</td>" .
 							 "<td>" .
-							 "<form method='post' action='/nozama/public/reportController'>" . 
+							 "<form method='post' action='/public/reportController'>" . 
 							 	"<input type='hidden' name='reportDetails' value='$report->Report_Id'>" .
 							 	"<input type='submit' value='View Report' class='btn btn-info'>" .
 							 "</form>" .
 							 "</td>" .
 							 "<td>" .
-								 "<form method='post' action='/Nozama/public/reportController'>" . 
+								 "<form method='post' action='/public/reportController'>" . 
 								 	"<input type='hidden' name='deleteReport' value='$report->Report_Id'>" .
 								 	"<input type='submit' value='Delete' class='btn btn-danger'>" .
 								 	"</form>" .

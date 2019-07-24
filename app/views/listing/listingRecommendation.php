@@ -12,12 +12,12 @@
 <body>
 	<td>
 		<center>
-			<a href="/Nozama/public/listingController/viewDetails/<?= $listingID ?>">
+			<a href="/public/listingController/viewDetails/<?= $listingID ?>">
 				<img height="100px" width="100px" src="data:image/jpeg;base64,<?= base64_encode($image) ?>" />
 			</a>
 
 			<div>
-				<a href="/Nozama/public/listingController/viewDetails/<?= $listingID ?>">
+				<a href="/public/listingController/viewDetails/<?= $listingID ?>">
 					<?= htmlentities($title) ?>
 				</a>
 			</div>

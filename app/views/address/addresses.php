@@ -18,7 +18,7 @@
 	</div>
 
 	<div>
-		<form method="POST" action="/Nozama/public/addressController/editAddress">
+		<form method="POST" action="/public/addressController/editAddress">
 			<input class="btn btn-primary" type="submit" value="Enter a new Address" />
 		</form>
 	</div>

@@ -4,7 +4,7 @@
 	<h1>Order Search</h1>
 </head>
 <body>
-	<form method="post" action="/nozama/public/orderController">
+	<form method="post" action="/public/orderController">
 	<div class="col-xs-2">
 		<input class="form-control" type="number" name="searchForOrder" required="true">
 	</div>

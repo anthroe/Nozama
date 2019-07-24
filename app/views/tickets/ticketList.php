@@ -47,7 +47,7 @@
 						 "<td>$ticket->Status</td>" .
 						 "<td>$ticket->Created_On</td>" .
 						 "<td>" .
-						 "<form method='post' action='/nozama/public/ticketController'>" . 
+						 "<form method='post' action='/public/ticketController'>" . 
 						 	"<input type='hidden' name='viewTicket' value='$ticket->Ticket_Id'>" .
 						 	"<input class='btn btn-info' type='submit' value='View Ticket'>" .
 						 "</form>" .

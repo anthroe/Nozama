@@ -39,13 +39,13 @@
 							 "<td>$notifications->Date</td>" .
 							 "<td>$status</td>" .
 							 "<td>" .
-							 "<form method='post' action='/Nozama/public/notificationController'>" . 
+							 "<form method='post' action='/public/notificationController'>" . 
 							 	"<input type='hidden' name='viewNotification' value='$notifications->Notification_Id'>" .
 							 	"<input type='submit' value='View Notification' class='btn btn-info'>" .
 							 "</form>" .
 							 "</td>" .
 							 "<td>" .
-							 "<form method='post' action='/Nozama/public/notificationController'>" . 
+							 "<form method='post' action='/public/notificationController'>" . 
 							 	"<input type='hidden' name='deleteNotification' value='$notifications->Notification_Id'>" .
 							 	"<input type='submit' value='Delete' class='btn btn-danger'>" .
 							 	"</form>" .

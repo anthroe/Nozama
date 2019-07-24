@@ -11,7 +11,7 @@ class cartController extends Controller {
 		{	 
 			echo '<script>alert("Proceeding to checkout")</script>';
 			echo '<script type="text/javascript">
-				window.location = "/Nozama/public/checkoutController"
+				window.location = "/public/checkoutController"
 				</script>';					
 		} 
 		else
@@ -52,7 +52,7 @@ class cartController extends Controller {
 		$cart = $cart->delete();
 		echo '<script>alert("Product has been removed")</script>';	
 		echo '<script type="text/javascript">
-			window.location = "/nozama/public/cartController"
+			window.location = "/public/cartController"
 			</script>';	
 		
 	}
@@ -79,7 +79,7 @@ class cartController extends Controller {
 		}
 		
 		echo '<script type="text/javascript">
-			window.location = "/nozama/public/cartController"
+			window.location = "/public/cartController"
 			</script>';	
 		
 	}		 
@@ -101,7 +101,7 @@ class cartController extends Controller {
 		
 		
 		echo '<script type="text/javascript">
-			window.location = "/nozama/public/cartController"
+			window.location = "/public/cartController"
 			</script>';	
 		
 	}	

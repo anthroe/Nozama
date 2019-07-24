@@ -157,7 +157,7 @@
 				// self::model('Notification')->submitTicketNotif($ticket->_createdBy, $ticket->Ticket_Id);
 
 				// Redirect to the home page
-				header('Location: '. '/Nozama/public');
+				header('Location: '. '/public');
 			//}
 		}
 

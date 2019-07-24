@@ -51,7 +51,7 @@ class paymentMethodController extends Controller
 			
 			if(!$paymentMethod->validate())
 			{
-				header('Location: '. '/Nozama/public/paymentMethodController/editPaymentMethod/' . $paymentID);
+				header('Location: '. '/public/paymentMethodController/editPaymentMethod/' . $paymentID);
 				return;
 			}
 
@@ -68,14 +68,14 @@ class paymentMethodController extends Controller
 			}	
 			
 			// Redirect to the list of payment methods
-			header('Location: '. '/Nozama/public/paymentMethodController/viewPaymentMethods/' . $_SESSION['accountID']);
+			header('Location: '. '/public/paymentMethodController/viewPaymentMethods/' . $_SESSION['accountID']);
 		}
 		else if(isset($_POST['delete']))
 		{
 			$paymentMethod->delete();
 			
 			// Redirect to the plist of payment methods
-			header('Location: '. '/Nozama/public/paymentMethodController/viewPaymentMethods/' . $_SESSION['accountID']);
+			header('Location: '. '/public/paymentMethodController/viewPaymentMethods/' . $_SESSION['accountID']);
 		}
 		else
 		{	
@@ -105,7 +105,7 @@ class paymentMethodController extends Controller
 		$newDefaultPaymentMethod->save();
 
 		// Redirect to the list of addresses
-		header('Location: '. '/Nozama/public/paymentMethodController/viewPaymentMethods/' . $_SESSION['accountID']);
+		header('Location: '. '/public/paymentMethodController/viewPaymentMethods/' . $_SESSION['accountID']);
 	}
 }
 

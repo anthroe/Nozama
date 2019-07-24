@@ -33,7 +33,7 @@
 							</b>
 						</div>
 
-						<form method="POST" action="/Nozama/public/loginController">
+						<form method="POST" action="/public/loginController">
 							<input class="btn btn-success" type="submit" value="Proceed to Checkout" />
 						</form>
 					</td>
