@@ -7,9 +7,9 @@ $capsule = new Capsule();
 $capsule->addConnection([
 	'driver' => 'mysql',
 	'host' => 'remotemysql.com',
-	'username' => 'TQfsoTaYPV',
-	'password' => '8sMommZprI',
-	'database' => 'TQfsoTaYPV',
+	'username' => 'rbHgkgh6TE',
+	'password' => 'KEBV9ao1ix',
+	'database' => 'rbHgkgh6TE',
 	'charset' => 'utf8',
 	'collation' => 'utf8_unicode_ci',
 	'prefix' => ''
